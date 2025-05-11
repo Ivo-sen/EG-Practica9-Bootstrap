@@ -1,0 +1,20 @@
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
